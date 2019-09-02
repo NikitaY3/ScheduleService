@@ -1,0 +1,37 @@
+spring:
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5Dialect
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
+  datasource:
+    url: jdbc:mysql://localhost:3306/y3?characterEncoding=utf-8&useSSL=false&serverTimezone=UTC
+    username: root
+    password: 15576123138
+    driver-class-name: com.mysql.cj.jdbc.Driver
+#    password:
+server:
+  port: 10024
+  servlet:
+    context-path:
+#  ssl:
+#    key-store: classpath:gornix.jks
+#    key-store-type: JKS
+#    key-password: 654321
+#    key-alias: gornix
+
+
+bilibiliApiUrl: https://api.bilibili.com/x/v2/reply
+
+filePath: D:/bilibiliComment
+
+allowedOrigin: https://selltom.mynatapp.cc
+
+ipRecordFilePath: D://barrage-site-visitor.txt
+
+defaultScannedPackage: barrage.demo
+
+
+#mybatis:
+#  mapper-locations: classpath:barrage/demo/mapper/barrage_info.xml
